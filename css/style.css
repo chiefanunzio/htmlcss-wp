@@ -89,10 +89,10 @@ aside{
 }
 
 .center{
-  width: calc(60% - 10px);
-  margin: 0 5px;
+  width: calc(60% - 40px);
+  margin: 0 20px;
 }
-
+      /* immagini articolo */
 div[class^="img"]{
   height: 30vh;
 }
@@ -114,7 +114,7 @@ div[class^="img"]{
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+      /* paragrafi e footer */
 h2, p{
   margin-top: 10px;
 }
