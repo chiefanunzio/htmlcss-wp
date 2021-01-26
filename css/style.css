@@ -2,13 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: ‘Montserrat’, sans-serif;
+  font-family: 'Montserrat'sans-serif;
 }
-      /* regole di debug */
 
 main{
   width: 70vw;
   margin: auto;
+}
+
+.layover{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+
 }
     /* regole header */
 header{
@@ -27,38 +35,48 @@ ul li{
   color: lightgrey;
   margin-right: 2px;
 }
-
+    /* jumbotrom */
 .jumbotron{
   height:65vh;
   width: 100%;
   background-image: url("../img/banner.jpg");
   background-size: cover;
   background-position: center;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-top:20px;
+  position: relative;
 }
 
+.jumbotron div:first-child{
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding:50px;
+  color:white;
+}
 
-
-.article{
-  /* height: 200px; */
-  background: blue;
+div span:first-child{
+  font-size: 30px;
+  font-weight: bold;
+}
+  /* parte articolo float */
+.row{
   margin-top: 10px;
 }
 
-
-div, aside{
-  background: lightblue;
+div span:only-of-type{
+  color:lightgrey;
 }
 
 .title{
-  height: 20px;
-  margin-bottom: 5px;
+  height: 50px;
+  margin: 20px 0;
 }
 
 .left, .center, .right{
   float: left;
-  height: 200px;
+  height: 15vh;
 }
 
 .left, .right{
@@ -73,7 +91,7 @@ div, aside{
 
 }
 
-.article:after{
+.row::after{
   content:'';
   display: table;
   clear: both;
