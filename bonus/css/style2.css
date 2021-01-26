@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat'sans-serif;
+}
+
+main{
+  width: 70vw;
+  margin: auto;
+}
+
+.layover{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+
+}
+    /* regole header */
+header{
+  height: 10vh;
+  margin-top: 10px;
+}
+
+#logo{
+  height: 40px;
+  margin-bottom: 20px;
+  border-right: 1px solid lightgrey;
+  padding-right: 20px;
+}
+
+ul li{
+  display: inline-block;
+  font-size: 10px;
+  color: lightgrey;
+  margin-right: 2px;
+}
+    /* jumbotrom */
+.jumbotron{
+  height:65vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-top:20px;
+  position: relative;
+}
+
+.yoga{
+    background-image: url("../../img/banner.jpg");
+}
+
+.jumbotron div:first-child{
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding:50px;
+  color:white;
+}
+
+div span:first-child{
+  font-size: 30px;
+  font-weight: bold;
+}
+  /* parte articolo float */
+
+div span:only-of-type{
+  color:lightgrey;
+}
+
+.title{
+  height: 50px;
+  margin: 20px 0;
+}
+
+.box{
+  margin-top: 10px;
+  position: relative;
+}
+
+div[class^="img"]{
+  height: 50vh;
+  background-size: cover;
+  background-position:center;
+}
+
+.jumbotron.pattern{
+  background-image: url("../../img/banner-2.jpg");
+}
+
+      /* paragrafi e footer */
+h4, p{
+  margin-top: 10px;
+}
+
+p{
+  color: lightgrey;
+}
+
+footer{
+  margin-top: 40px;
+  text-align: center;
+}
+
+#red{
+  color: red;
+}
