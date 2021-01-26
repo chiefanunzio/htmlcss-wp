@@ -7,12 +7,12 @@
       /* regole di debug */
 
 main{
-  width: 80%;
+  width: 70vw;
   margin: auto;
 }
     /* regole header */
 header{
-  height: 100px;
+  height: 10vh;
   margin-top: 10px;
 }
 
@@ -24,16 +24,21 @@ header{
 ul li{
   display: inline-block;
   font-size: 10px;
-  color:lightgrey;
-  margin-right: 5px;
+  color: lightgrey;
+  margin-right: 2px;
+}
+
+.jumbotron{
+  height:65vh;
+  width: 100%;
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  margin-top:20px;
 }
 
 
-.content{
-  height:250px;
-  background: yellow;
-  margin-top: 10px;
-}
 
 .article{
   /* height: 200px; */
