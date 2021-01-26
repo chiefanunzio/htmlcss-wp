@@ -65,6 +65,12 @@ div span:first-child{
   margin-top: 10px;
 }
 
+.row::after{
+  content:'';
+  display: table;
+  clear: both;
+}
+
 div span:only-of-type{
   color:lightgrey;
 }
@@ -74,31 +80,54 @@ div span:only-of-type{
   margin: 20px 0;
 }
 
-.left, .center, .right{
+aside, .center{
   float: left;
-  height: 15vh;
 }
 
-.left, .right{
+aside{
   width: 20%;
-  background: red;
 }
 
 .center{
   width: calc(60% - 10px);
   margin: 0 5px;
-  background: red;
-
 }
 
-.row::after{
-  content:'';
-  display: table;
-  clear: both;
+div[class^="img"]{
+  height: 30vh;
+}
+
+.img-left{
+  background-image: url("../img/img-1.jpg");
+  background-size: cover;
+}
+
+.img-right{
+  background-image: url("../img/img-3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.img-center{
+  background-image: url("../img/banner-2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h2, p{
+  margin-top: 10px;
+}
+
+p{
+  color: lightgrey;
 }
 
 footer{
-  height: 25px;
-  background: green;
-  margin-top: 5px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+#red{
+  color: red;
 }
