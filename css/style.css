@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: ‘Montserrat’, sans-serif;
+}
+      /* regole di debug */
+
+main{
+  width: 80%;
+  margin: auto;
+}
+    /* regole header */
+header{
+  height: 100px;
+  margin-top: 10px;
+}
+
+#logo{
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+ul li{
+  display: inline-block;
+  font-size: 10px;
+  color:lightgrey;
+  margin-right: 5px;
+}
+
+
+.content{
+  height:250px;
+  background: yellow;
+  margin-top: 10px;
+}
+
+.article{
+  /* height: 200px; */
+  background: blue;
+  margin-top: 10px;
+}
+
+
+div, aside{
+  background: lightblue;
+}
+
+.title{
+  height: 20px;
+  margin-bottom: 5px;
+}
+
+.left, .center, .right{
+  float: left;
+  height: 200px;
+}
+
+.left, .right{
+  width: 20%;
+  background: red;
+}
+
+.center{
+  width: calc(60% - 10px);
+  margin: 0 5px;
+  background: red;
+
+}
+
+.article:after{
+  content:'';
+  display: table;
+  clear: both;
+}
+
+footer{
+  height: 25px;
+  background: green;
+  margin-top: 5px;
+}
